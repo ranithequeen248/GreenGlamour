@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FAQ</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <style>
+      /* Style the drop-down content */
+      .dropdown-content {
+        display: none;
+        padding: 10px;
+      }
+      /* Style the drop-down button */
+      .dropdown-btn {
+        background-color: #f9f9f9;
+        border: none;
+        color: #333;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+      }
+      /* Change the color of the button when active */
+      .dropdown-btn.active {
+        background-color: #ddd;
+      }
+    </style>
+    <link rel = "stylesheet" href = "style.css"/>
+      <link 
+      rel="stylesheet"  
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+       crossorigin="anonymous"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+    <nav class="navbar">
+    <div class="navbar__container">
+      <img src="logo.png" alt="Logo">
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/resources.html" class="navbar__links">Resources</a>
+       
+        </li>
+        <li class="navbar__item">
+          <a href="/clothingquiz.html" class="navbar__links">Directory</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/FAQ.html" class="navbar__links">FAQ</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/CONTACT.html" class="navbar__links">Contact Us</a>
+        </li>
+        <!--
+    <li class="navbar__bts">
+        <a href="/" class="button">Sign Up</a>
+    </li>
+  -->
+      </ul>
+
+    </div>
+  </nav>
+    </ul>
+  </div>
+  </div>
+    </div>
+  <div class = "contacthaha">
+     <!-- Create the drop-down container -->
+    <div class="dropdown">
+      <!-- Create the drop-down button -->
+      <button class="dropdown-btn">How should I contact you?</button>
+      <!-- Create the drop-down content -->
+      <div class="dropdown-content">
+       You call fill in our contact form if you have any specific questions otherwise email us at support@TBL.org
+      </div>
+    </div>
+    <!-- Create additional drop-downs as needed -->
+    <div class="dropdown">
+      <button class="dropdown-btn">How can I dispose of my fast fashion garments in a more sustainable way?
+</button>
+      <div class="dropdown-content">
+        <p>There are several ways you can dispose of your fast fashion garments in a more sustainable way, including:
+
+Donate them to charity or thrift stores.
+Sell them online or at a consignment store.
+Upcycle them into something new, such as a tote bag or pillowcase.
+Recycle them through textile recycling programs or initiatives offered by some brands.
+By choosing to dispose of your fast fashion garments in a more sustainable way, you can help reduce the amount of clothing waste that ends up in landfills and contribute to a more circular fashion economy.</p> 
+      </div>
+    </div>
+     <div class="dropdown">
+      <button class="dropdown-btn">What are the consequences of fast fashion on garment workers' labor rights and working conditions?
+</button>
+      <div class="dropdown-content">
+       <p>The fast fashion industry is known for its exploitative labor practices, which often involve:
+Low wages and long working hours.
+Unsafe and unsanitary working conditions.
+Limited or no access to labor rights, such as the right to unionize.
+These conditions can lead to physical and mental health problems, as well as poverty and a cycle of debt for garment workers. By supporting brands that prioritize ethical labor practices and fair wages, consumers can help create a more just and equitable fashion industry.</p>
+      </div>
+    </div>
+     <div class="dropdown">
+      <button class="dropdown-btn">Can I still enjoy fashion while being environmentally conscious?
+</button>
+      <div class="dropdown-content">
+        Yes, absolutely! Being environmentally conscious doesn't mean giving up fashion altogether. There are many ways to enjoy fashion in a more sustainable way, such as:
+
+Investing in high-quality, timeless pieces that will last for years.
+Choosing clothing made from sustainable and eco-friendly materials, such as organic cotton, hemp, or recycled fabrics.
+Shopping secondhand or vintage clothing.
+Supporting brands that prioritize sustainable and ethical practices.
+By making conscious choices about the fashion we consume and support, we can enjoy fashion while also minimizing its impact on the environment and people.
+      </div>
+    </div>
+    <!-- Include JavaScript to toggle the drop-down content -->
+    <script>
+      // Get all drop-down buttons
+      const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+      // Loop through the drop-down buttons
+      dropdownBtns.forEach((btn) => {
+        // Add a click event listener to each button
+        btn.addEventListener("click", () => {
+          // Toggle the active class on the button
+          btn.classList.toggle("active");
+          // Get the drop-down content associated with the button
+          const dropdownContent = btn.nextElementSibling;
+          // Toggle the display of the drop-down content
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      });
+    </script>
+  </div>
+  </body>
+</html>
+
+
+
+

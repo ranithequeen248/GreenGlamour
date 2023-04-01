@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bottom Line Website</title>
+<link rel = "stylesheet" href = "style.css"/>
+<link 
+rel="stylesheet"  
+href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+ crossorigin="anonymous"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<title>Contact Us</title>
+  <link rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+    <div class="navbar__container">
+      <img src="logo.png" alt="Logo">
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/resources.html" class="navbar__links">Resources</a>
+       
+        </li>
+        <li class="navbar__item">
+          <a href="/clothingquiz.html" class="navbar__links">Directory</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/FAQ.html" class="navbar__links">FAQ</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/CONTACT.html" class="navbar__links">Contact Us</a>
+        </li>
+        <!--
+    <li class="navbar__bts">
+        <a href="/" class="button">Sign Up</a>
+    </li>
+  -->
+      </ul>
+
+    </div>
+  </nav>
+  </div>
+
+	<h1 class = "contactUs">Contact Us</h1>
+	<form action="submit-form.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="question">Question:</label><br>
+		<textarea id="question" name="question" rows="5" cols="40" required></textarea><br><br>
+		
+        <button onclick="alert('Thank you for submitting. We will respond to your question.')">Submit</button>
+    
+	</form>
+  <body style="background-color:#CAE9F5;">
+  </body>
+</html>
